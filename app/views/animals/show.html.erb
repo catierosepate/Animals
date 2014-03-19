@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title"><strong><%= @animal.name %></strong></h1>
+        </div>
+        <div class="panel-body">
+          <img src="<%= @animal.image_url %>"/>
+        </div>
+        <div class="panel-footer">
+          <%= link_to 'Edit', edit_animal_path(@animal) %> |
+          <%= link_to 'Back', animals_path %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4><%= @animal.description %></h4>
+    </div>
+  </div>
+</div>
+    

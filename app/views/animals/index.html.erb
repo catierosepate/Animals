@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="center-block">
+      <div class="jumbotron">
+        <div style="text-align:center">
+          <h1>Baby Animals</h1>
+          <p>Catie and Catie</p>
+        </div>
+          <p><a class="btn btn-primary btn-lg" role="button" href="<%=new_animal_path %>">New Animal</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% @animals.each do |animal| %>
+  <div class="container">
+    <div class="row">
+      <div class="center-block" style="text-align:center">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= link_to animal.name, animal %></h3>
+          </div>
+          <div class="panel-body">
+            <div class="center-block">
+              <img src="<%= animal.image_url%>"/>
+            </div>
+          </div>
+          <div class="panel-footer">
+                <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
+                <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+<br>

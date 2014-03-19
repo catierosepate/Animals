@@ -11,3 +11,22 @@
  *= require_self
  *= require_tree .
  */
+
+body{
+  background-image:url("http://www.thefrisky.com/wp-content/uploads/2013/04/16/cute-puppies6.gif");
+}
+
+.jumbotron{
+  background-image:url("http://media.tumblr.com/tumblr_m63vx7IzXK1r8kfj1.gif");
+  background-repeat:no-repeat;
+  background-position:center;
+  color:white;
+}
+
+img{
+  margin:0;
+}
+
+.panel-body{
+  padding:0;
+}

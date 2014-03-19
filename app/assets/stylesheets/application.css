@@ -12,6 +12,10 @@
  *= require_tree .
  */
 
+.navbar{
+  border-radius:0;
+}
+
 body{
   background-image:url("http://www.thefrisky.com/wp-content/uploads/2013/04/16/cute-puppies6.gif");
 }
@@ -29,4 +33,14 @@ img{
 
 .panel-body{
   padding:0;
+  text-align:center;
+}
+
+.panel-title{
+  text-align:center;
+}
+
+
+h4{
+  text-align:center;
 }
